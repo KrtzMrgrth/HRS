@@ -6,6 +6,9 @@ function routeAfterLogin(): void
     if (isAdmin()) {
         redirect('admin_dashboard.php');
     }
+    if (isHrManager()) {
+        redirect('hr_manager_dashboard.php');
+    }
     if (isManager()) {
         redirect('manager_dashboard.php');
     }
@@ -64,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="credential-panel">
                 <h3>Demo workspace access</h3>
                 <ul>
-                    <li><strong>Alicia (HR Generalist):</strong> alicia@hrs.com / 123456</li>
+                    <li><strong>Alicia (HR Manager):</strong> alicia@hrs.com / 123456</li>
                     <li><strong>Sophia (Manager):</strong> sophia.chen@hrs.com / sophia123</li>
                     <li><strong>Marcus:</strong> marcus@hrs.com / demo123</li>
                     <li><strong>Priya:</strong> priya@hrs.com / hrpass</li>

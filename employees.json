@@ -81,11 +81,11 @@
     },
     {
         "id": 1000,
-        "name": "HR Manager",
+        "name": "Admin",
         "email": "admin@hrs.com",
         "password": "admin123",
         "department": "Administration",
-        "role": "HR Manager",
+        "role": "Admin",
         "manager": "Board",
         "location": "Remote",
         "employment_type": "Full-time",

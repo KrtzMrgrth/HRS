@@ -9,6 +9,10 @@ if (isAdmin()) {
     redirect('admin_dashboard.php');
 }
 
+if (isHrManager()) {
+    redirect('hr_manager_dashboard.php');
+}
+
 if (isManager()) {
     redirect('manager_overview.php');
 }

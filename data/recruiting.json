@@ -1,0 +1,65 @@
+{
+    "requisitions": [
+        {
+            "id": "req_frontend_001",
+            "title": "Frontend Developer",
+            "department": "Engineering",
+            "openings": 1,
+            "status": "Open",
+            "created_at": "2026-10-01"
+        },
+        {
+            "id": "req_hr_001",
+            "title": "HR Generalist",
+            "department": "Human Resources",
+            "openings": 1,
+            "status": "Open",
+            "created_at": "2026-10-05"
+        }
+    ],
+    "candidates": [
+        {
+            "id": "candidate_001",
+            "name": "Jordan Lee",
+            "email": "jordan.lee@example.com",
+            "phone": "+63 917 555 0101",
+            "position": "Frontend Developer",
+            "source": "Employee referral",
+            "requisition_id": "req_frontend_001",
+            "stage": "Interview",
+            "offer_status": "Not started",
+            "created_at": "2026-10-08",
+            "onboarding_status": "Not started"
+        },
+        {
+            "id": "candidate_002",
+            "name": "Camille Santos",
+            "email": "camille.santos@example.com",
+            "phone": "+63 918 555 0102",
+            "position": "HR Generalist",
+            "source": "Job board",
+            "requisition_id": "req_hr_001",
+            "stage": "Hired",
+            "offer_status": "Accepted",
+            "created_at": "2026-10-03",
+            "onboarding_status": "Ready to start",
+            "start_date": "2026-11-03"
+        }
+    ],
+    "interviews": [
+        {
+            "id": "interview_001",
+            "candidate_id": "candidate_001",
+            "date": "2026-10-28T10:00",
+            "interviewer": "Sophia Chen",
+            "status": "Scheduled"
+        },
+        {
+            "id": "interview_002",
+            "candidate_id": "candidate_002",
+            "date": "2026-10-10T14:00",
+            "interviewer": "Alicia Morgan",
+            "status": "Completed"
+        }
+    ]
+}

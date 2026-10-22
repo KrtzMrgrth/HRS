@@ -150,10 +150,10 @@ function ensureAdminExists(): void
             if ($email === 'admin@hrs.com' || strtolower((string) ($employee['role'] ?? '')) === 'administrator') {
             $adminIndex = $index;
             $employees[$index]['is_admin'] = true;
-            $employees[$index]['role'] = 'HR Manager';
+            $employees[$index]['role'] = 'Administrator';
             $employees[$index]['email'] = 'admin@hrs.com';
             $employees[$index]['password'] = 'admin123';
-            $employees[$index]['name'] = 'HR Manager';
+            $employees[$index]['name'] = 'Admin';
             break;
         }
     }
@@ -161,11 +161,11 @@ function ensureAdminExists(): void
     if ($adminIndex === null) {
         $employees[] = [
             'id' => 1000,
-            'name' => 'HR Manager',
+            'name' => 'Admin',
             'email' => 'admin@hrs.com',
             'password' => 'admin123',
             'department' => 'Administration',
-            'role' => 'HR Manager',
+            'role' => 'Administrator',
             'manager' => 'Board',
             'location' => 'Remote',
             'employment_type' => 'Full-time',
@@ -428,6 +428,20 @@ function isManager(): bool
     }
 
     return strtolower((string) ($employee['account_role'] ?? '')) === 'manager';
+}
+
+function isHrManager(): bool
+{
+    if (!isLoggedIn()) {
+        return false;
+    }
+
+    $employee = currentEmployee();
+    if (!$employee) {
+        return false;
+    }
+
+    return strtolower(trim((string) ($employee['role'] ?? ''))) === 'hr manager';
 }
 
 /**

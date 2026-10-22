@@ -81,7 +81,7 @@
     },
     {
         "id": 1000,
-        "name": "HR Admin",
+        "name": "Admin",
         "email": "admin@hrs.com",
         "password": "admin123",
         "department": "Administration",
