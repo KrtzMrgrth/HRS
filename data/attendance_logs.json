@@ -1,0 +1,72 @@
+[
+    {
+        "id": "1790750640-11978b76",
+        "employee_id": 1001,
+        "employee_name": "Alicia Morgan",
+        "date": "2026-09-30",
+        "day": "Wednesday",
+        "clock_in": "09:00 AM",
+        "clock_out": "",
+        "status": "Adjusted - Present"
+    },
+    {
+        "id": "1790824052-6ae4ae65",
+        "employee_id": 1001,
+        "employee_name": "Alicia Morgan",
+        "date": "2026-10-01",
+        "day": "Thursday",
+        "clock_in": "09:00 AM",
+        "clock_out": "",
+        "status": "Adjusted - Present"
+    },
+    {
+        "id": "1790918888-a82f99c5",
+        "employee_id": 2012,
+        "employee_name": "Kurtz P. Golla",
+        "date": "2026-10-02",
+        "day": "Friday",
+        "clock_in": "01:28 PM",
+        "clock_out": "",
+        "status": "On time"
+    },
+    {
+        "id": "1791163881-bf1c6b2c",
+        "employee_id": 1001,
+        "employee_name": "Alicia Morgan",
+        "date": "2026-10-05",
+        "day": "Monday",
+        "clock_in": "09:31 AM",
+        "clock_out": "",
+        "status": "On time"
+    },
+    {
+        "id": "1791273201-1e465728",
+        "employee_id": 2010,
+        "employee_name": "Prince Perez",
+        "date": "2026-10-06",
+        "day": "Tuesday",
+        "clock_in": "03:53 PM",
+        "clock_out": "",
+        "status": "On time"
+    },
+    {
+        "id": "1791339312-3506c376",
+        "employee_id": 1002,
+        "employee_name": "Marcus Hill",
+        "date": "2026-10-07",
+        "day": "Wednesday",
+        "clock_in": "10:15 AM",
+        "clock_out": "11:02 AM",
+        "status": "Completed"
+    },
+    {
+        "id": "1792030972-1943b60b",
+        "employee_id": 1002,
+        "employee_name": "Marcus Hill",
+        "date": "2026-10-15",
+        "day": "Thursday",
+        "clock_in": "10:22 AM",
+        "clock_out": "",
+        "status": "On time"
+    }
+]

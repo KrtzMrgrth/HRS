@@ -1,0 +1,14 @@
+[
+    {
+        "id": "1791338880-851a47aa",
+        "employee_id": 1002,
+        "employee_name": "Marcus Hill",
+        "department": "Engineering",
+        "leave_type": "Vacation Leave",
+        "start_date": "2026-10-29",
+        "end_date": "2026-10-30",
+        "reason": "PERSONAL LEAVE",
+        "status": "Approved",
+        "submitted_at": "2026-10-07 10:08:00"
+    }
+]

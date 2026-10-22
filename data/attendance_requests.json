@@ -1,0 +1,16 @@
+[
+    {
+        "id": "1792031179-1f261a28",
+        "employee_id": 1002,
+        "employee_name": "Marcus Hill",
+        "department": "Engineering",
+        "request_type": "Official Business",
+        "request_date": "2026-10-16",
+        "location": "Cebu",
+        "time_from": "08:30",
+        "time_to": "17:30",
+        "reason": "Business plan meeting",
+        "status": "Pending",
+        "submitted_at": "2026-10-15 10:26:19"
+    }
+]

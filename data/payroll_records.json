@@ -1,0 +1,25 @@
+[
+    {
+        "employee_id": 1001,
+        "employee_name": "Alicia Morgan",
+        "department": "Human Resources",
+        "role": "HR Generalist",
+        "base_salary": 50000,
+        "allowance": 0,
+        "late_minutes": 0,
+        "late_deduction": 0,
+        "absent_days": 0,
+        "absence_deduction": 0,
+        "sss": 0,
+        "philhealth": 0,
+        "pagibig": 0,
+        "overtime_hours": 0,
+        "overtime_rate": 250,
+        "overtime_pay": 0,
+        "paid_leave_days": 0,
+        "net_pay": 50000,
+        "cutoff": "2026-10-15",
+        "created_at": "2026-10-15 10:27:41",
+        "id": "1792031261-72bad4c1"
+    }
+]
