@@ -158,19 +158,20 @@ $detailSections = [
                 <span class="brand-mark">SS</span>
                 <span>SmartStaff</span>
             </div>
-            <nav class="nav-menu">
+            <nav class="nav-menu" aria-label="Employee workspace">
+                <span class="nav-section-label"><?php echo isAdmin() ? 'Administration' : (isManager() ? 'Manager workspace' : 'Employee workspace'); ?></span>
                 <?php if (isAdmin()): ?>
-                    <a href="admin_dashboard.php" class="nav-link">Admin Dashboard</a>
-                    <a href="employee_details.php?id=<?php echo (int) $employee['id']; ?>" class="nav-link active">Employee Details</a>
+                    <a href="admin_dashboard.php" class="nav-link"><span class="nav-link-icon">DB</span>Admin Dashboard</a>
+                    <a href="employee_details.php?id=<?php echo (int) $employee['id']; ?>" class="nav-link active" aria-current="page"><span class="nav-link-icon">EM</span>Employee Details</a>
                 <?php elseif ($isManagerTeamView): ?>
-                    <a href="manager_dashboard.php" class="nav-link">Manager Dashboard</a>
-                    <a href="employee_details.php?id=<?php echo (int) $employee['id']; ?>" class="nav-link active">Employee Details</a>
+                    <a href="manager_dashboard.php" class="nav-link"><span class="nav-link-icon">DB</span>Manager Dashboard</a>
+                    <a href="employee_details.php?id=<?php echo (int) $employee['id']; ?>" class="nav-link active" aria-current="page"><span class="nav-link-icon">EM</span>Employee Details</a>
                 <?php else: ?>
                     <?php if (isManager()): ?>
                         <a href="manager_dashboard.php" class="nav-link">Manager Dashboard</a>
                     <?php endif; ?>
                     <a href="dashboard.php" class="nav-link">Dashboard</a>
-                    <a href="employee_details.php" class="nav-link active">Employee Details</a>
+                    <a href="employee_details.php" class="nav-link active" aria-current="page">Employee Details</a>
                     <a href="leave_application.php" class="nav-link">Leave Application</a>
                     <a href="attendance_request.php" class="nav-link">My Attendance Request</a>
                 <?php endif; ?>

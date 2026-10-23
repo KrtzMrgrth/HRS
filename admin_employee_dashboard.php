@@ -36,13 +36,19 @@ unset($_SESSION['flash_message']);
                 <span class="nav-section-label">HR workspace</span>
                 <a href="<?php echo $workspaceHome; ?>" class="nav-link"><span class="nav-link-icon">DB</span>Dashboard</a>
                 <a href="admin_employee_dashboard.php" class="nav-link active" aria-current="page"><span class="nav-link-icon">EM</span>Employees</a>
-                <a href="hr_manager_module.php?module=recruiting" class="nav-link"><span class="nav-link-icon">RC</span>Recruiting</a>
-                <a href="hr_manager_module.php?module=onboarding" class="nav-link"><span class="nav-link-icon">OB</span>Onboarding</a>
+                <?php if (isHrManager()): ?>
+                    <a href="hr_manager_module.php?module=recruiting" class="nav-link"><span class="nav-link-icon">RC</span>Recruiting</a>
+                    <a href="hr_manager_module.php?module=onboarding" class="nav-link"><span class="nav-link-icon">OB</span>Onboarding</a>
+                <?php endif; ?>
                 <a href="admin_payroll_dashboard.php" class="nav-link"><span class="nav-link-icon">PY</span>Payroll</a>
-                <a href="hr_manager_module.php?module=time-off" class="nav-link"><span class="nav-link-icon">TO</span>Time Off</a>
-                <a href="hr_manager_module.php?module=performance" class="nav-link"><span class="nav-link-icon">PF</span>Performance</a>
-                <a href="hr_manager_module.php?module=reports" class="nav-link"><span class="nav-link-icon">RA</span>Reports &amp; Analytics</a>
-                <a href="hr_manager_module.php?module=settings" class="nav-link"><span class="nav-link-icon">ST</span>Settings</a>
+                <?php if (isHrManager()): ?>
+                    <a href="hr_manager_module.php?module=time-off" class="nav-link"><span class="nav-link-icon">TO</span>Time Off</a>
+                    <a href="hr_manager_module.php?module=performance" class="nav-link"><span class="nav-link-icon">PF</span>Performance</a>
+                    <a href="hr_manager_module.php?module=reports" class="nav-link"><span class="nav-link-icon">RA</span>Reports &amp; Analytics</a>
+                    <a href="hr_manager_module.php?module=settings" class="nav-link"><span class="nav-link-icon">ST</span>Settings</a>
+                <?php else: ?>
+                    <a href="admin_settings.php" class="nav-link"><span class="nav-link-icon">ST</span>System settings</a>
+                <?php endif; ?>
             </nav>
 
             <div class="sidebar-footer">

@@ -1,0 +1,8 @@
+{
+    "organization_name": "SmartStaff",
+    "timezone": "Asia/Manila",
+    "date_format": "F j, Y",
+    "approval_mode": "Administrator review",
+    "notification_email": "admin@hrs.com",
+    "maintenance_mode": false
+}

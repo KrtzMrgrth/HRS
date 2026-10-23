@@ -299,9 +299,13 @@ foreach ($moduleData['candidates'] as $candidateRecord) {
                 <span class="nav-section-label">HR Manager workspace</span>
                 <a href="hr_manager_dashboard.php" class="nav-link"><span class="nav-link-icon">DB</span>Dashboard</a>
                 <a href="admin_employee_dashboard.php" class="nav-link"><span class="nav-link-icon">EM</span>Employees</a>
-                <?php foreach ($moduleConfig as $key => $item): ?>
-                    <a href="hr_manager_module.php?module=<?php echo urlencode($key); ?>" class="nav-link<?php echo $key === $module ? ' active' : ''; ?>"<?php echo $key === $module ? ' aria-current="page"' : ''; ?>><span class="nav-link-icon"><?php echo $item['icon']; ?></span><?php echo htmlspecialchars($item['label']); ?></a>
-                <?php endforeach; ?>
+                <a href="hr_manager_module.php?module=recruiting" class="nav-link<?php echo $module === 'recruiting' ? ' active' : ''; ?>"<?php echo $module === 'recruiting' ? ' aria-current="page"' : ''; ?>><span class="nav-link-icon">RC</span>Recruiting</a>
+                <a href="hr_manager_module.php?module=onboarding" class="nav-link<?php echo $module === 'onboarding' ? ' active' : ''; ?>"<?php echo $module === 'onboarding' ? ' aria-current="page"' : ''; ?>><span class="nav-link-icon">OB</span>Onboarding</a>
+                <a href="admin_payroll_dashboard.php" class="nav-link"><span class="nav-link-icon">PY</span>Payroll</a>
+                <a href="hr_manager_module.php?module=time-off" class="nav-link<?php echo $module === 'time-off' ? ' active' : ''; ?>"<?php echo $module === 'time-off' ? ' aria-current="page"' : ''; ?>><span class="nav-link-icon">TO</span>Time Off</a>
+                <a href="hr_manager_module.php?module=performance" class="nav-link<?php echo $module === 'performance' ? ' active' : ''; ?>"<?php echo $module === 'performance' ? ' aria-current="page"' : ''; ?>><span class="nav-link-icon">PF</span>Performance</a>
+                <a href="hr_manager_module.php?module=reports" class="nav-link<?php echo $module === 'reports' ? ' active' : ''; ?>"<?php echo $module === 'reports' ? ' aria-current="page"' : ''; ?>><span class="nav-link-icon">RA</span>Reports &amp; Analytics</a>
+                <a href="hr_manager_module.php?module=settings" class="nav-link<?php echo $module === 'settings' ? ' active' : ''; ?>"<?php echo $module === 'settings' ? ' aria-current="page"' : ''; ?>><span class="nav-link-icon">ST</span>Settings</a>
             </nav>
             <div class="sidebar-footer"><p><?php echo htmlspecialchars($employee['name']); ?></p><a href="logout.php" class="logout-link">Log out</a></div>
         </aside>

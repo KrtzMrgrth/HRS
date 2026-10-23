@@ -113,13 +113,14 @@ $recentEmployeeLeave = array_values(array_filter(
                 <span class="brand-mark">SS</span>
                 <span>SmartStaff</span>
             </div>
-            <nav class="nav-menu">
+            <nav class="nav-menu" aria-label="Employee workspace">
+                <span class="nav-section-label">Employee workspace</span>
                 <?php if (isManager()): ?>
                     <a href="manager_dashboard.php" class="nav-link">Manager Dashboard</a>
                 <?php endif; ?>
                 <a href="dashboard.php" class="nav-link">Dashboard</a>
                 <a href="employee_details.php" class="nav-link">Employee Details</a>
-                <a href="leave_application.php" class="nav-link active">Leave Application</a>
+                <a href="leave_application.php" class="nav-link active" aria-current="page">Leave Application</a>
                 <a href="attendance_request.php" class="nav-link">My Attendance Request</a>
             </nav>
             <div class="sidebar-footer">
