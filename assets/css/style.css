@@ -558,6 +558,117 @@ textarea {
     line-height: 1.5;
 }
 
+.performance-stats strong small,
+.analytics-stats strong small {
+    display: inline;
+    margin-left: 4px;
+    color: var(--muted);
+    font-size: 0.78rem;
+}
+
+.performance-list {
+    display: grid;
+    gap: 12px;
+}
+
+.performance-record {
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: #fbfdfd;
+}
+
+.performance-record-heading,
+.performance-update-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.performance-record-heading {
+    justify-content: space-between;
+}
+
+.performance-record-heading strong,
+.performance-record-heading small {
+    display: block;
+}
+
+.performance-record-heading small,
+.performance-goal {
+    color: var(--muted);
+    font-size: 0.8rem;
+}
+
+.performance-goal {
+    margin: 12px 0;
+    color: var(--text);
+    line-height: 1.45;
+}
+
+.performance-update-form input,
+.performance-update-form select {
+    min-width: 0;
+    padding: 9px 10px;
+}
+
+.performance-update-form input[name="notes"] {
+    flex: 1;
+}
+
+.analytics-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: 18px;
+}
+
+.analytics-table-row {
+    display: grid;
+    grid-template-columns: 1.5fr 0.6fr 0.6fr 0.6fr;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 0;
+    border-top: 1px solid var(--border);
+    font-size: 0.86rem;
+}
+
+.analytics-table-heading {
+    border-top: 0;
+    padding-top: 0;
+    color: var(--muted);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.signal-list {
+    display: grid;
+    gap: 12px;
+}
+
+.signal-item {
+    padding: 14px;
+    border-left: 3px solid var(--primary);
+    background: var(--accent);
+}
+
+.signal-item strong,
+.signal-item small {
+    display: block;
+}
+
+.signal-item small {
+    margin-top: 5px;
+    color: var(--muted);
+    line-height: 1.4;
+}
+
+.performance-stats ~ .dashboard-main-row + .dashboard-main-row,
+.analytics-stats ~ .panel {
+    display: none;
+}
+
 .module-link {
     margin-top: auto;
     color: #1f806b;
